@@ -1,0 +1,6 @@
+<a href="#" class="list-group-item">
+<h4 class="list-group-item-heading">{{ fixDate(weather.dt) | date }}</h4>
+<p class="list-group-item-text">DayTime Temperature: 
+{{ convertToCelcius(weather.main.temp) }}</p>
+<small>{{ weather.dt_txt }}</small>
+</a>

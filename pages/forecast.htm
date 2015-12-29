@@ -1,0 +1,28 @@
+<h2> Forecast for: <small>{{cityName}}</small></h2>
+
+<!-- Single button -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Days Forcast <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li ng-class="{ 'active' : days === '1' }"><a href="#/forecast/1">1</a></li>
+    <li ng-class="{ 'active' : days === '3' }"><a href="#/forecast/3">3</a></li>
+    <li ng-class="{ 'active' : days === '5' }"><a href="#/forecast/5">5</a></li>
+    <li ng-class="{ 'active' : days === '7' }"><a href="#/forecast/7">7</a></li>
+  </ul>
+</div>
+
+<hr/>
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div ng-repeat="weather in weatherResult.list">
+            <div class="list-group">
+                
+                    <weather-report></weather-report>
+                </div>
+            </div>
+        </div>
+    </div>
