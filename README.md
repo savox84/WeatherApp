@@ -1,2 +1,2 @@
 # WeatherApp
-A simple weather application using angual
+A simple weather application using AngularJS
